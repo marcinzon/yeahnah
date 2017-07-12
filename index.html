@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>YeahNah</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:700" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+	<style>
+		.wrap{
+			margin:auto;
+			width:900px;
+		}
+		body{
+			background-color: orange;
+			font-family: serif;
+		}
+		h1{
+			font-family: 'Oswald', sans-serif;
+			font-weight: 700;
+			font-size: 200px;
+			margin:auto;
+		}
+		.button:hover{
+			background-color: white;
+		}
+		.button{
+			width:100px;
+			height:50px;
+			background-color: black;
+		}
+		.invisible{
+			color:orange;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="wrap">
+<div>
+	<span id="yeah" class="invisible">
+		<h1>YEAH</h1>
+	</span>
+	<span id="nah">
+		<h1>NAH</h1>
+	</span>
+</div>
+<div class="button">
+	
+</div>
+
+
+</div>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'
+</script>
+<script>
+	$(document).ready(function(){
+		console.log('this');
+
+		$('.button').click(function(){
+			if($('#yeah').hasClass('invisible')){
+				$('#yeah').removeClass('invisible');
+				$('#nah').addClass('invisible');
+			}
+			else{
+				$('#nah').removeClass('invisible');
+				$('#yeah').addClass('invisible');
+			}
+
+		});
+
+	});
+</script>
+</body>
+</html>
