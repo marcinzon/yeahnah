@@ -28,9 +28,17 @@
 			width:100px;
 			height:50px;
 			background-color: black;
-		}
+ -webkit-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-ms-user-select: none;		}
 		.invisible{
 			color:orange;
+		}
+		.suggestion{
+			font-family:  sans-serif;
+			font-weight: 20;
+			font-size: 8;
 		}
 
 
@@ -49,7 +57,15 @@
 <div class="button">
 	
 </div>
-
+<!-- <div>
+	<span class="suggestion"><p>This is kinda neat I should share this with my mates.</p></span>
+	<span class="shareLinks"><p>YOU SHOULD TOTALLY SHARE THIS WITH YOUR FRIENDS</p></span>
+	<ul>
+		<li>Facebook</li>
+		<li>Twitter</li>
+		<li>Link</li>
+	</ul>
+</div> -->
 
 </div>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>'
